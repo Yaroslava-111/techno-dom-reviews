@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>ТехноДом — отзывы</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Интернет-магазин «ТехноДом»</h1>
+  <p>Отзывы покупателей о товарах</p>
+</header>
+
+<section id="about">
+  <p>Здесь покупатели делятся впечатлениями о заказанных товарах.
+  Оставьте свой отзыв ниже — он появится в общем списке.</p>
+</section>
+
+<section id="add-review">
+  <h2>Оставить отзыв</h2>
+  <form id="reviewForm">
+    <label>Ваше имя<br><input type="text" id="reviewName" required></label><br><br>
+    <label>Текст отзыва<br><textarea id="reviewText" rows="3" required></textarea></label><br><br>
+    <button type="submit">Отправить отзыв</button>
+  </form>
+</section>
+
+<section id="reviews">
+  <h2>Отзывы покупателей</h2>
+  <div id="filterBar" role="group" aria-label="Фильтр по тональности">
+    <button class="filter-btn active" data-sentiment="all">Все</button>
+    <button class="filter-btn" data-sentiment="positive">Положительные</button>
+    <button class="filter-btn" data-sentiment="neutral">Нейтральные</button>
+    <button class="filter-btn" data-sentiment="negative">Отрицательные</button>
+  </div>
+  <ul id="reviewList"></ul>
+</section>
+
+<footer>
+  <p>ТехноДом — техника с доставкой по всей стране</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

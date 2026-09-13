@@ -1,0 +1,10 @@
+# env
+.env
+.env.local
+.env.*
+
+!.env.example
+
+# операционные системы
+.DS_Store
+Thumbs.db
